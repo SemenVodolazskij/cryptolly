@@ -1,0 +1,18 @@
+.text__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  gap: 24px;
+  margin: 94px 84px 0 0;
+}
+
+.text__h3 {
+    margin: 0;
+}
+
+.text__p {
+    margin: 0;
+  text-align: left;
+  max-width: 500px;
+}

@@ -1,0 +1,44 @@
+@use '../../utils/value.scss' as *;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.container__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text__p {
+    max-width: 500px;
+    text-align: center;
+    margin: 0;
+}
+
+.text__h5 {
+    color: #B982FF;
+    margin-bottom: 4px;
+}
+
+.text__h2 {
+    margin-bottom: 24px;
+}
+
+.wrapper__cards {
+    display: flex;
+    gap: 50px;
+
+    @include screen-width(tablet){
+        flex-direction: column;
+    }
+
+    @include screen-width(phone){
+        flex-direction: column;
+    }
+}

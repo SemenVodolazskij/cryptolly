@@ -1,0 +1,27 @@
+$ButtonGradient1: #933ffe;
+$ButtonGradient2: #18c8ff;
+
+$MainGadient1: #292e4bbf; // 75%, 35%
+$MainGadient2: #303a78;
+
+$MainGadient3: #3da5f5;
+$MainGadient4: #3e45ee; // 0%
+
+$MainGadient5: #df1dff;
+$MainGadient6: #48cdff; // 0%
+
+@mixin screen-width($breakpoint) {
+  @if $breakpoint == tablet {
+    @media (min-width: 648px) and (max-width: 1199px) {
+      @content;
+    }
+  } @else if $breakpoint == phone {
+    @media (min-width: 300px) and (max-width: 647px) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}

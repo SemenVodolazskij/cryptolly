@@ -1,0 +1,81 @@
+@use "../../utils/value.scss" as *;
+
+.wrapper__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.color__text {
+  color: #b982ff;
+  margin-bottom: -20px;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin-top: -20px;
+}
+
+.cart {
+  width: 380px;
+  height: 330px;
+  border-radius: 25px;
+  background: radial-gradient(
+      circle at top left,
+      rgba(62, 238, 227, 0.6) 0%,
+      rgba(62, 69, 238, 0) 50%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(223, 29, 255, 0.6) 0%,
+      rgba(72, 205, 255, 0) 50%
+    ),
+    linear-gradient(180deg, #292e4b 75%, #25283a 35%, #292e4b 35%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+
+  @include screen-width(tablet) {
+    flex-direction: column;
+  }
+
+  @include screen-width(phone) {
+    flex-direction: column;
+  }
+}
+
+.paddings {
+  padding: 40px 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icon {
+  margin-top: 20px;
+  background-color: grey;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}

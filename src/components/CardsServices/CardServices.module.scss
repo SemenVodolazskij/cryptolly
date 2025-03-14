@@ -1,0 +1,103 @@
+@use "../../utils/value.scss" as *;
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @include screen-width(phone) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include screen-width(tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 0;
+  }
+}
+
+.text {
+  color: #b982ff;
+  margin-bottom: -20px;
+  max-width: 100px;
+  text-align: left;
+}
+
+.text__our {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.text__h2 {
+  max-width: 350px;
+  text-align: left;
+}
+
+.text__p {
+  text-align: left;
+  margin: 0;
+}
+
+.text__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+
+.cart {
+  width: 380px;
+  height: 330px;
+  border-radius: 25px;
+  background: radial-gradient(
+      circle at top,
+      rgba(223, 29, 255, 0.6) 0%,
+      rgba(62, 69, 238, 0) 50%
+    ),
+    radial-gradient(
+      circle at bottom,
+      rgba(223, 29, 255, 0.6) 0%,
+      rgba(72, 205, 255, 0) 50%
+    ),
+    linear-gradient(180deg, #292e4b 75%, #25283a 35%, #292e4b 35%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.paddings {
+  padding: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.icon__overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

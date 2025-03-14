@@ -1,0 +1,91 @@
+@use "../../utils/value.scss" as *;
+
+.logo {
+  margin-top: 26px;
+}
+
+.wrapper__burger__menu {
+  margin-top: 30px;
+}
+
+@include screen-width(desktop) {
+  .hidden__button {
+    margin: 0 50px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    }
+
+  .text {
+    text-decoration: none;
+    margin: 0;
+    &:visited {
+      color: #fff;
+      background: none;
+    }
+    &:active {
+      color: #fff;
+      background: none;
+    }
+    &:focus {
+      color: #fff;
+      background: none;
+      outline: none;
+    }
+  }
+
+  .li {
+    list-style: none;
+  }
+
+  .ul {
+    display: flex;
+    gap: 30px;
+    margin: 20px 160px 0 170px;
+    padding: 0;
+  }
+}
+
+@include screen-width(phone) {
+  .ul {
+    display: none;
+  }
+
+  .hidden__button {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 130px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 30px;
+  }
+}
+
+@include screen-width(tablet) {
+  .ul {
+    display: none;
+  }
+
+  .hidden__button {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 300px;
+  }
+
+}

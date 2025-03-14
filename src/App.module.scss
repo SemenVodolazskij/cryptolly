@@ -1,0 +1,39 @@
+@use "./utils/value.scss" as *;
+
+@include screen-width(desktop) {
+  .wrapper {
+    padding-inline: 130px;
+  }
+}
+
+@include screen-width(tablet) {
+  .wrapper {
+    padding-inline: 64px;
+  }
+}
+
+@include screen-width(phone) {
+  .wrapper {
+    padding-inline: 32px;
+  }
+}
+
+.section {
+  margin-bottom: 200px;
+}
+
+.section__wrapper__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+
+  @include screen-width(tablet) {
+    max-width: 1200px;
+  }
+
+  @include screen-width(phone) {
+    max-width: 648px;
+  }
+}
