@@ -1,9 +1,20 @@
 import styles from "./CardServices.module.scss";
+import glass from "../../assets/glass.svg";
+import icon1 from "../../assets/vector.svg";
+import icon2 from "../../assets/VectorPlayer.svg";
+import icon3 from "../../assets/wallet.svg";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 export const CardsServices = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className={styles.wrapper}>
-      <div className={styles.cart}>
+      <div className={styles.cart} data-aos="flip-left">
         <div className={styles.text__wrapper}>
           <div className={styles.text__our}>
             <h5 className={styles.text}>Our Services</h5>
@@ -15,11 +26,11 @@ export const CardsServices = () => {
           </p>
         </div>
       </div>
-      <div className={styles.cart}>
+      <div className={styles.cart} data-aos="flip-left">
         <div className={styles.paddings}>
           <div className={styles.icon}>
-            <img src="/public/glass.svg" />
-            <img src="/public/vector.svg" className={styles.icon__overlay} />
+            <img src={glass} />
+            <img src={icon1} className={styles.icon__overlay} />
           </div>
           <h3>Bitcoin Escrow Service</h3>
           <p>
@@ -28,14 +39,11 @@ export const CardsServices = () => {
           </p>
         </div>
       </div>
-      <div className={styles.cart}>
+      <div className={styles.cart} data-aos="flip-left">
         <div className={styles.paddings}>
           <div className={styles.icon}>
-            <img src="/public/glass.svg" />
-            <img
-              src="/public/VectorPlayer.svg"
-              className={styles.icon__overlay}
-            />
+            <img src={glass} />
+            <img src={icon2} className={styles.icon__overlay} />
           </div>
           <h3>Safe And Secure</h3>
           <p>
@@ -44,11 +52,11 @@ export const CardsServices = () => {
           </p>
         </div>
       </div>
-      <div className={styles.cart}>
+      <div className={styles.cart} data-aos="flip-right">
         <div className={styles.paddings}>
           <div className={styles.icon}>
-            <img src="/public/glass.svg" />
-            <img src="/public/wallet.svg" className={styles.icon__overlay} />
+            <img src={glass} />
+            <img src={icon3} className={styles.icon__overlay} />
           </div>
           <h3>Integrated App</h3>
           <p>
@@ -57,14 +65,11 @@ export const CardsServices = () => {
           </p>
         </div>
       </div>
-      <div className={styles.cart}>
+      <div className={styles.cart} data-aos="flip-right">
         <div className={styles.paddings}>
           <div className={styles.icon}>
-            <img src="/public/glass.svg" />
-            <img
-              src="/public/VectorPlayer.svg"
-              className={styles.icon__overlay}
-            />
+            <img src={glass} />
+            <img src={icon2} className={styles.icon__overlay} />
           </div>
           <h3>Safe And Secure</h3>
           <p>
@@ -73,11 +78,11 @@ export const CardsServices = () => {
           </p>
         </div>
       </div>
-      <div className={styles.cart}>
+      <div className={styles.cart} data-aos="flip-right">
         <div className={styles.paddings}>
           <div className={styles.icon}>
-            <img src="/public/glass.svg" />
-            <img src="/public/wallet.svg" className={styles.icon__overlay} />
+            <img src={glass} />
+            <img src={icon3} className={styles.icon__overlay} />
           </div>
           <h3>Safe And Secure</h3>
           <p>

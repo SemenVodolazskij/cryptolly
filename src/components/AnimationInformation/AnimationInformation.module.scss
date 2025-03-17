@@ -18,6 +18,10 @@
 
 .text_h2 {
     max-width: 500px;
+
+    @include screen-width(phone) {
+      font-size: 36px;
+    }
 }
 
 .text__wrapper {
@@ -37,10 +41,12 @@
   width: 559px;
   height: 98px;
   border-radius: 25px;
+  border: 1px solid rgba(223, 29, 255, 0.6);
   background:
     radial-gradient(
       circle at top left,
       rgba(223, 29, 255, 0.6) 10%,
+      rgba(62, 69, 238, 0) 50%,
       rgba(62, 69, 238, 0) 70%
     ),
     radial-gradient(
@@ -55,11 +61,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   transition: 0.3s;
 
   &:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(223, 29, 255, 0.5);
+  }
+
+  @include screen-width(phone) {
+    width: 320px;
   }
 }

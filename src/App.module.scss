@@ -22,6 +22,12 @@
   margin-bottom: 200px;
 }
 
+.footer__wrapper {
+  @include screen-width(phone) {
+    padding-inline: 32px;
+  }
+}
+
 .section__wrapper__container {
   display: flex;
   align-items: center;
@@ -35,5 +41,29 @@
 
   @include screen-width(phone) {
     max-width: 648px;
+  }
+}
+
+.background__image {
+  background-image: url(./assets/gradientBackground/bg-gradient-img.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  height: 1100px;
+}
+
+.wrapper__backg__image {
+  background: url(./assets/backgroundIcon/Bitcoin-1.png);
+  background-repeat: no-repeat;
+
+  background-position: left bottom;
+  top: 50px;
+
+  @include screen-width(tablet) {
+    background: url('');
+  }
+
+  @include screen-width(phone) {
+    background: url('');
   }
 }

@@ -14,12 +14,16 @@ import { VideoPreview } from "./components/VideoPreview/VideoPreview";
 function App() {
   return (
     <>
-      <div>
-        <Header />
+        <div className={styles.wrapper__backg__image}>
+          <div className={styles.background__image}>
+            <Header />
+            <section className={styles.section}>
+              <TextBlock />
+            </section>
+          </div>
+        </div>
+
         <main>
-          <section className={styles.section}>
-            <TextBlock />
-          </section>
           <section className={`${styles.section} ${styles.wrapper}`}>
             <TokenSeal />
           </section>
@@ -49,10 +53,9 @@ function App() {
             <VideoPreview />
           </section>
         </main>
-        <footer>
+        <footer className={styles.footer__wrapper}>
           <Footer />
         </footer>
-      </div>
     </>
   );
 }

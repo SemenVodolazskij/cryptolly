@@ -3,6 +3,11 @@ import typography from "../../utils/typography.module.scss";
 import { Button } from "../Button/Button";
 import { InfoBlock } from "../InfoBlock/InfoBlock";
 import { InfoWindowBlock } from "../InfoWindowBlock/InfoWindowBlock";
+// import star from "../../assets/backgroundIcon/star-img.png";
+// import bitcoin from "../../assets/backgroundIcon/Bitcoin-1.png";
+// import ethr from "../../assets/backgroundIcon/EtheriumCoin.png";
+// import lite from "../../assets/backgroundIcon/LiteCoin-1.png";
+// import monero from "../../assets/backgroundIcon/MoneroCoin.png";
 
 const buttonText = "Get started";
 const number1 = "5,000+";
@@ -11,9 +16,10 @@ const number2 = "2,000+";
 export const TextBlock = () => {
   return (
     <div className={styles.wrapper}>
+
       <div className={styles.wrapper_Info}>
         <div className={styles.hide__block}>
-        <InfoBlock />
+          <InfoBlock />
         </div>
         
         <h1 className={styles.title}>Own Your Crypto</h1>

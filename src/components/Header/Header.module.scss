@@ -4,6 +4,26 @@
   margin-top: 26px;
 }
 
+// .gradient {
+//   position: relative;
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     background: radial-gradient(
+//       circle at center,
+//       rgba(17, 87, 62, 1) 100px,
+//       rgba(23, 59, 128, 1) 90%,
+//       rgba(97, 88, 88) 100%
+//     );
+//     width: 354px;
+//     height: 354px;
+//     z-index: -1;
+//     left: -70%;
+//     border-radius: 50%;
+//     backdrop-filter: blur(200px);
+//   }
+// }
+
 .wrapper__burger__menu {
   margin-top: 30px;
 }
@@ -18,7 +38,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    }
+  }
 
   .text {
     text-decoration: none;
@@ -87,5 +107,4 @@
     flex-direction: row;
     gap: 300px;
   }
-
 }

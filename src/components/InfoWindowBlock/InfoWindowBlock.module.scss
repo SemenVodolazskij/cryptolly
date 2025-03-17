@@ -1,18 +1,52 @@
 .container {
   width: 195px;
   height: 250px;
-  background: radial-gradient(
-    circle at top right,
-    #df1dff 0%,
-    #292e4b 15%,
-    #25283a 50%,
-    #3e45ee 85%,
-    #3eeee3 100%
-  );
 
   border-radius: 25px;
-  border: 1px solid #4a5bd5;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.background__second__block {
+  background: linear-gradient(
+      148.49deg,
+      rgba(32, 33, 46, 0.8) 19.24%,
+      rgba(37, 40, 58, 0.4) 100%,
+      rgba(41, 46, 75, 0.28) 100%
+    ),
+    radial-gradient(
+      103.82% 99.4% at 8.46% 139.64%,
+      rgba(62, 238, 227, 0.5) 35.28%,
+      rgba(62, 69, 238, 0) 100%
+    ),
+    radial-gradient(
+      59.14% 46.67% at 100% 5.38%,
+      rgba(223, 29, 255, 0.5) 0%,
+      rgba(72, 205, 255, 0) 100%
+    );
+  border: 1px solid rgba(255, 255, 255, 1);
+  backdrop-filter: blur(100px);
+  box-shadow: 0px 4px 38.4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.background__first__block {
+  border: 1px solid rgba(255, 255, 255, 1);
+  backdrop-filter: blur(100px);
+  box-shadow: 0px 4px 38.4px 0px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(
+      354.69deg,
+      rgba(41, 46, 75, 0.525) 8.5%,
+      rgba(37, 40, 58, 0.245) 87.31%,
+      rgba(41, 46, 75, 0.245) 87.31%
+    ),
+    radial-gradient(
+      120.77% 90.44% at 137.44% 90.44%,
+      rgba(62, 238, 227, 0.5) 29.6%,
+      rgba(62, 69, 238, 0) 100%
+    ),
+    radial-gradient(
+      59.26% 91.83% at 17.69% 100%,
+      rgba(223, 29, 255, 0.35) 0%,
+      rgba(72, 205, 255, 0) 100%
+    );
 }
 
 .image__icon {

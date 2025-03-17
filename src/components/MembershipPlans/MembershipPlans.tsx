@@ -1,8 +1,15 @@
 import styles from "./MembershipPlans.module.scss";
-import utils from '../../utils/typography.module.scss';
+import utils from "../../utils/typography.module.scss";
 import { CardsPlans } from "../CardsPlans/CardsPlans";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 export const MembershipPlans = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className={styles.container}>
       <div className={styles.container__text}>
@@ -14,9 +21,13 @@ export const MembershipPlans = () => {
         </p>
       </div>
       <div className={styles.wrapper__cards}>
-        <CardsPlans />
-        <CardsPlans />
-        <CardsPlans />
+        <div data-aos="fade-left">
+          <CardsPlans />
+        </div>
+          <CardsPlans />
+        <div data-aos="fade-right">
+          <CardsPlans />
+        </div>
       </div>
     </div>
   );

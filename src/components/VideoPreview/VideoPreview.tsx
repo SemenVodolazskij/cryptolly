@@ -1,5 +1,7 @@
 import { useState } from "react";
 import styles from "./VideoPreview.module.scss";
+import ReactPlayer from "react-player";
+import pause from "../../assets/Pause.svg";
 
 export const VideoPreview = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -21,18 +23,17 @@ export const VideoPreview = () => {
           {!isPlaying ? (
             <div className={styles.preview}>
               <button className={styles.playButton} onClick={handlePlay}>
-                <img src="/Pause.svg" alt="Play" />
+                <img src={pause} alt="Play" />
               </button>
             </div>
           ) : (
-            <iframe
-              className={styles.videoFrame}
-              src="https://vimeo.com/1065457459/3e8354a712"
-              title="Video Player"
-              frameBorder="0"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-            ></iframe>
+            <ReactPlayer
+              url="https://www.youtube.com/watch?v=prrLx4tdB-0&ab_channel=ChillCartoonVibes"
+              controls={true}
+              playing
+              width={"500px"}
+              height={"250px"}
+            />
           )}
         </div>
       </div>

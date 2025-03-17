@@ -28,6 +28,10 @@
 
 .text__h2 {
     margin-bottom: 24px;
+
+    @include screen-width(tablet) {
+        text-align: center;
+    }
 }
 
 .wrapper__cards {

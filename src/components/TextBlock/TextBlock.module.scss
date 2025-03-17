@@ -69,7 +69,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-  }   
+  }
 
   .title {
     text-align: center;
@@ -87,6 +87,10 @@
 
   .button__wrapper {
     max-width: 100px;
+
+    @include screen-width(phone) {
+      margin-right: 60px;
+    }
   }
 
   .hide__block {
