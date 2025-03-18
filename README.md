@@ -12,9 +12,9 @@ Cryptolly is a cryptocurrency company website where users can explore the compan
 - **React Hooks**
 - **TypeScript & JavaScript**
 - **HTML5**
-- **Figma** (for design reference)
+- **[Figma](https://www.figma.com/design/aoof39L5whL9cq3q5uSL0P/%D0%A2.Z.20-%D0%92%D0%B5%D1%80%D1%81%D1%82%D0%BA%D0%B0-Frontend?node-id=73-4658&t=nTHN7Ji1pPQip8xO-0)** (for design reference)
 - **VS Code**
-- **GitHub & GitHub Pages**
+- **GitHub & [GitHub Pages](https://semenvodolazskij.github.io/cryptolly/)**
 - **CSS Gradient Backgrounds**
 
 ## Installation & Setup
