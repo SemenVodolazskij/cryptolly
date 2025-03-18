@@ -1,54 +1,104 @@
-# React + TypeScript + Vite
+# Cryptolly - Crypto Company Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Cryptolly is a cryptocurrency company website where users can explore the company's team, mission, and crypto tokens. The project is built with modern web technologies and features interactive animations, a player, and a slider.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**
+- **ReactPlayer** (for video embedding)
+- **AOS (Animation On Scroll)**
+- **React Slider**
+- **SCSS Modules**
+- **React Hooks**
+- **TypeScript & JavaScript**
+- **HTML5**
+- **Figma** (for design reference)
+- **VS Code**
+- **GitHub & GitHub Pages**
+- **CSS Gradient Backgrounds**
 
-## Expanding the ESLint configuration
+## Installation & Setup
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+To run the project locally:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/cryptolly.git
+   cd cryptolly
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the development server:
+   ```sh
+   npm run dev
+   ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Challenges Faced
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Gradient Backgrounds** - Creating gradients was interesting but challenging. Despite efforts, achieving the exact design from Figma was difficult, especially under certain elements.
+2. **Missing Icon** - One icon was unavailable in Figma, requiring a similar replacement.
+3. **Video Player Implementation** - Initially, I attempted to use an iframe but later switched to `reactPlayer`, which simplified the process significantly.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Additional Notes
+
+- The project features smooth animations for a modern and engaging user experience.
+- The navigation menu is optimized for mobile devices.
+- The color scheme and gradients were carefully chosen to match the branding.
+
+---
+
+# Cryptolly - Криптокомпанія
+
+Cryptolly - це вебсайт криптовалютної компанії, де користувачі можуть ознайомитися з її командою, ідеями та криптотокенами. Проєкт використовує сучасні технології веброзробки, анімації, відеоплеєр і слайдер.
+
+## Використані технології
+
+- **React**
+- **ReactPlayer** (для відео)
+- **AOS (Animation On Scroll)**
+- **React Slider**
+- **SCSS Modules**
+- **React Hooks**
+- **TypeScript & JavaScript**
+- **HTML5**
+- **Figma** (для дизайну)
+- **VS Code**
+- **GitHub & GitHub Pages**
+- **CSS Gradient Backgrounds**
+
+## Встановлення та запуск
+
+Щоб запустити проєкт локально:
+
+1. Клонувати репозиторій:
+   ```sh
+   git clone https://github.com/yourusername/cryptolly.git
+   cd cryptolly
+   ```
+2. Встановити залежності:
+   ```sh
+   npm install
+   ```
+3. Запустити сервер розробки:
+   ```sh
+   npm run dev
+   ```
+
+## Проблеми, з якими зіткнувся
+
+1. **Градієнти** - Створення градієнтів було цікавим, але складним завданням. Досягти точного вигляду, як у макеті, не вдалося, особливо під деякими елементами.
+2. **Відсутня іконка** - Одна іконка не завантажувалася у Figma, тому довелося знайти схожий варіант.
+3. **Реалізація відеоплеєра** - Спочатку хотів використати `iframe`, але зрештою обрав `reactPlayer`, що значно спростило задачу.
+
+## Додаткові примітки
+
+- Проєкт має плавні анімації для покращення взаємодії з користувачем.
+- Меню навігації адаптовано для мобільних пристроїв.
+- Колірна схема та градієнти підібрані відповідно до стилю компанії.
+
+---
+
+Feel free to contribute and improve the project! 🚀
+
