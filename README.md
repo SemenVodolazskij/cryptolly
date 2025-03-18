@@ -37,7 +37,7 @@ To run the project locally:
 
 ## Challenges Faced
 
-1. **Gradient Backgrounds** - Creating gradients was interesting but challenging. Despite efforts, achieving the exact design from Figma was difficult, especially under certain elements.
+1. **Gradient Backgrounds** - Creating gradients was interesting but challenging. Despite efforts, achieving the exact design from Figma was difficult, especially under certain elements. But I made every effort to do it.
 2. **Missing Icon** - One icon was unavailable in Figma, requiring a similar replacement.
 3. **Video Player Implementation** - Initially, I attempted to use an iframe but later switched to `reactPlayer`, which simplified the process significantly.
 
@@ -88,7 +88,7 @@ Cryptolly - це вебсайт криптовалютної компанії, �
 
 ## Проблеми, з якими зіткнувся
 
-1. **Градієнти** - Створення градієнтів було цікавим, але складним завданням. Досягти точного вигляду, як у макеті, не вдалося, особливо під деякими елементами.
+1. **Градієнти** - Створення градієнтів було цікавим, але складним завданням. Досягти точного вигляду, як у макеті, не вдалося, особливо під деякими елементами. Але я доклав всіх зусиль, щоб зробити це.
 2. **Відсутня іконка** - Одна іконка не завантажувалася у Figma, тому довелося знайти схожий варіант.
 3. **Реалізація відеоплеєра** - Спочатку хотів використати `iframe`, але зрештою обрав `reactPlayer`, що значно спростило задачу.
 
