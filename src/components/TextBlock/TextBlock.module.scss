@@ -74,6 +74,8 @@
   .title {
     text-align: center;
     font-size: 40px;
+    position: relative;
+    z-index: 1;
   }
 
   .description {

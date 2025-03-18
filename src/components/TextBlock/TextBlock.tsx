@@ -16,12 +16,11 @@ const number2 = "2,000+";
 export const TextBlock = () => {
   return (
     <div className={styles.wrapper}>
-
       <div className={styles.wrapper_Info}>
         <div className={styles.hide__block}>
           <InfoBlock />
         </div>
-        
+
         <h1 className={styles.title}>Own Your Crypto</h1>
       </div>
       <h1 className={styles.title}>Adventure</h1>

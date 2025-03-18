@@ -23,7 +23,7 @@ export const Modules = () => {
             aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
           </p>
         </div>
-        <div className={styles.container__wrapper} data-aos="fade-left">
+        <div className={styles.container__wrapper}>
           <div className={styles.wrapper__text__image}>
             <div className={styles.info__container}>
               <h3 className={styles.text__h3}>Module 1: The foundation</h3>
@@ -60,7 +60,7 @@ export const Modules = () => {
             />
           </div>
         </div>
-        <div className={styles.container__wrapper} data-aos="fade-right">
+        <div className={styles.container__wrapper}>
           <div className={styles.wrapper__text__image}>
             <div className={styles.info__container}>
               <h3 className={styles.text__h3}>Module 1: The foundation</h3>
@@ -97,7 +97,7 @@ export const Modules = () => {
             />
           </div>
         </div>
-        <div className={styles.container__wrapper} data-aos="fade-left">
+        <div className={styles.container__wrapper}>
           <div className={styles.wrapper__text__image}>
             <div className={styles.info__container}>
               <h3 className={styles.text__h3}>Module 1: The foundation</h3>

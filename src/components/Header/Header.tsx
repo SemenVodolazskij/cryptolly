@@ -3,16 +3,13 @@ import utils from "../../utils/typography.module.scss";
 import { Button } from "../Button/Button";
 import { BurgerMenu } from "../BurgerMenu/BurgerMenu";
 import logo from "../../assets/Logo.svg";
-
 const buttonText = "Get in Touch";
 
 export const Header = () => {
   return (
     <header>
       <nav className={styles.nav}>
-        {/* <div className={styles.gradient}> */}
-          <img src={logo} alt="Logo" className={styles.logo} />
-        {/* </div> */}
+        <img src={logo} alt="Logo" className={styles.logo} />
         <ul className={styles.ul}>
           <li className={styles.li}>
             <a href="about" className={`${utils.body__text2} ${styles.text}`}>

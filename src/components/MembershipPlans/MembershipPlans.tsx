@@ -21,11 +21,11 @@ export const MembershipPlans = () => {
         </p>
       </div>
       <div className={styles.wrapper__cards}>
-        <div data-aos="fade-left">
+        <div>
           <CardsPlans />
         </div>
           <CardsPlans />
-        <div data-aos="fade-right">
+        <div>
           <CardsPlans />
         </div>
       </div>

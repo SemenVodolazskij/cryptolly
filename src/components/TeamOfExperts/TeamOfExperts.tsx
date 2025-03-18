@@ -17,18 +17,6 @@ import "swiper/css/autoplay";
 
 const buttonTextWidth = "Get Started";
 
-type Members = {
-  id: number;
-  image: string;
-  alt: string;
-};
-
-const experts: Members[] = [
-  { id: 1, image: cryptoMen1, alt: "CryptoMen" },
-  { id: 2, image: cryptoMen2, alt: "CryptoMen" },
-  { id: 3, image: cryptoGirl, alt: "CryptoGirl" },
-];
-
 export const TeamOfExperts = () => {
   return (
     <>
@@ -47,20 +35,42 @@ export const TeamOfExperts = () => {
           <Swiper
             className={styles.swiper}
             modules={[Autoplay]}
-            spaceBetween={0}
+            spaceBetween={1000}
             slidesPerView={1}
             centeredSlides={false}
             autoplay={{ delay: 4000, disableOnInteraction: false }}
             loop={true}
           >
-            {experts.map((expert) => (
-              <SwiperSlide key={expert.id}>
+              <SwiperSlide>
                 <div className={styles.cryptoMen__image}>
-                  <img src={expert.image} alt={expert.alt} className={styles.img}/>
+                  <img
+                    src={cryptoMen1}
+                    alt="CryptoMen"
+                    className={styles.img}
+                  />
                   <SmallWindow />
                 </div>
               </SwiperSlide>
-            ))}
+              <SwiperSlide>
+                <div className={styles.cryptoMen__image}>
+                  <img
+                    src={cryptoMen2}
+                    alt="CryptoMen"
+                    className={styles.img}
+                  />
+                  <SmallWindow />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className={styles.cryptoMen__image}>
+                  <img
+                    src={cryptoGirl}
+                    alt="CryptoGirl"
+                    className={styles.img}
+                  />
+                  <SmallWindow />
+                </div>
+              </SwiperSlide>
           </Swiper>
         </div>
       </div>

@@ -1,5 +1,99 @@
 @use "./utils/value.scss" as *;
 
+.backg__images {
+  position: relative;
+  overflow: hidden;
+}
+
+.backgrPurple {
+  position: absolute;
+  width: 800px;
+  height: 1000px;
+  top: 0;
+  z-index: 0;
+  right: 700px;
+}
+
+.backgrPink {
+  width: 40%;
+  position: absolute;
+  height: 1000px;
+  top: 0;
+  left: 700px;
+  z-index: 0;
+  overflow: hidden;
+
+  @include screen-width(tablet) {
+    width: 500px;
+    left: 100px;
+  }
+
+  @include screen-width(phone) {
+    width: 250px;
+    left: 50px;
+  }
+}
+
+.backgrGreen {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  left: 10px;
+  top: 50px;
+  z-index: 0;
+
+  @include screen-width(phone) {
+    width: 300px;
+  }
+
+  @include screen-width(tablet) {
+    width: 400px;
+  }
+}
+
+.backgrLogo {
+  position: absolute;
+  left: 0;
+  width: 1000px;
+  z-index: 0;
+  top: 0;
+  height: 300px;
+
+  @include screen-width(phone) {
+    width: 300px;
+  }
+
+  @include screen-width(tablet) {
+    width: 400px;
+  }
+}
+
+.star {
+  position: absolute;
+  width: 61.000000575628746px;
+  height: 60.00000056619221px;
+  top: 186.7px;
+  left: 70px;
+}
+
+.monero {
+  position: absolute;
+  width: 143.60870190628904;
+  height: 144.55015392146575;
+  top: 55px;
+  left: 345.71px;
+
+  @include screen-width(phone) {
+    width: 100px;
+    left: 50px;
+  }
+
+  @include screen-width(tablet) {
+    width: 200px;
+    left: 500px;
+  }
+}
+
 @include screen-width(desktop) {
   .wrapper {
     padding-inline: 130px;
@@ -50,6 +144,17 @@
   background-position: top right;
 
   height: 1100px;
+  z-index: 0;
+}
+
+.backgr__bitcoinsPair {
+  background-image: url(./assets/BitcoinsPair.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.section__background {
+  z-index: 0;
 }
 
 .wrapper__backg__image {
@@ -60,10 +165,10 @@
   top: 50px;
 
   @include screen-width(tablet) {
-    background: url('');
+    background: url("");
   }
 
   @include screen-width(phone) {
-    background: url('');
+    background: url("");
   }
 }

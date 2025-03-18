@@ -77,13 +77,12 @@
 .cryptoMen__image {
   margin-top: 83px;
   position: relative;
-  width: 100%px;
-
+  width: 100%;
 }
 
 .img {
   @include screen-width(phone) {
-    width: 300px;
+    width: 320px;
     height: 250px;
     z-index: 0;
     padding-left: 70px;
@@ -96,10 +95,15 @@
 }
 
 .swiper__container {
-  width: 800px;
+  max-width: 800px;
 
   @include screen-width(phone) {
     width: 100%;
     z-index: 0;
   }
+
+  @include screen-width(tablet) {
+    width: 600px;
+  }
+
 }
