@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./BurgerMenu.module.scss";
 
 export const BurgerMenu = () => {
@@ -6,7 +6,16 @@ export const BurgerMenu = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    document.body.classList.toggle("menu-active", !isOpen);
   };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("menu-open");
+    } else {
+      document.body.classList.remove("menu-open");
+    }
+  }, [isOpen]);
 
   return (
     <div className={styles.burgerMenu}>
@@ -22,7 +31,7 @@ export const BurgerMenu = () => {
       </div>
 
       <nav className={`${styles.menu} ${isOpen ? styles.menuOpen : ""}`}>
-        <div className={styles.burgerIcon} onClick={toggleMenu}>
+        <div className={`${styles.burgerIcon} ${styles.burgerIcon__margin}`} onClick={toggleMenu}>
           <span></span>
           <span></span>
           <span></span>

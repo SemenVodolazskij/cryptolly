@@ -56,7 +56,7 @@ export const TeamOfExperts = () => {
             {experts.map((expert) => (
               <SwiperSlide key={expert.id}>
                 <div className={styles.cryptoMen__image}>
-                  <img src={expert.image} alt={expert.alt} />
+                  <img src={expert.image} alt={expert.alt} className={styles.img}/>
                   <SmallWindow />
                 </div>
               </SwiperSlide>

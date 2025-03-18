@@ -104,9 +104,11 @@
   }
 
   @include screen-width(phone) {
-    margin-top: 40px;
-    margin-left: 20px;
-    column-gap: 40px;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: left;
+    padding: 0;
+    margin: 10px;
   }
 }
 
